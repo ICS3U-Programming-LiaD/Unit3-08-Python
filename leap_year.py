@@ -7,15 +7,15 @@
 
 def main():
 
-    # Determining whether the user can date their grandchild
+    
     try:
-        # Getting the Users age
+        # Getting the year
         user_input_as_string = input("Input a year: ")
         user_input_as_int = int(user_input_as_string)
     except Exception:
         print("Invalid input, please input a year")
 
-    # Determine whether the user is the right age to date the grandchild
+    # Determine whether the year is a leap year or not
     else:
         if user_input_as_int % 4 == 0:
             if user_input_as_int % 100 == 0 and user_input_as_int % 400 == 0:
